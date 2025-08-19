@@ -14,6 +14,7 @@ class MediaPlayer {
 
     this.init();
   }
+  
 
   async init() {
     try {
