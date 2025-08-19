@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaisMídia - Player</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="media-container">
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Carregando mídia...</p>
+        </div>
+
+        <div id="media-display" class="media-display hidden">
+            <img id="media-image" class="media-content" alt="Mídia" />
+            <video id="media-video" class="media-content hidden" muted playsinline></video>
+            <div id="academy-info" class="academy-info">
+                <h2 id="academy-name">Academia</h2>
+                <div class="media-counter"><span id="current-index">1</span>/<span id="total-items">0</span></div>
+            </div>
+        </div>
+
+        <div id="error-display" class="error-display hidden">
+            <h2>Erro ao carregar</h2>
+            <p id="error-message">Verifique a conexão</p>
+            <button onclick="retryLoad()">Tentar novamente</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<style>
+  body { background: #000; }
+</style>
+</html>
+
